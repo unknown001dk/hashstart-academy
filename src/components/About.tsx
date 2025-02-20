@@ -1,4 +1,3 @@
-import React from 'react';
 import { Code, Users, Laptop, Trophy } from 'lucide-react';
 
 const features = [

@@ -1,4 +1,3 @@
-import React from 'react';
 import InfiniteScroll from '../animations/InfiniteScroll';
 
 const companies = [

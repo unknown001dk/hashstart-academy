@@ -1,11 +1,10 @@
-import React from 'react';
 import { Users, BookOpen, Trophy, Building } from 'lucide-react';
 
 const stats = [
-  { icon: Users, label: 'Students Enrolled', value: '5,000+' },
-  { icon: BookOpen, label: 'Courses', value: '50+' },
+  { icon: Users, label: 'Students Enrolled', value: '50+' },
+  { icon: BookOpen, label: 'Courses', value: '10+' },
   { icon: Trophy, label: 'Success Rate', value: '95%' },
-  { icon: Building, label: 'Partner Companies', value: '100+' },
+  { icon: Building, label: 'Partner Companies', value: '3+' },
 ];
 
 const Stats = () => {

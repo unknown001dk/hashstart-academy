@@ -1,5 +1,5 @@
-import React from 'react';
-import { Mail, User, Phone } from 'lucide-react';
+import React from "react";
+import { Mail, User, Phone } from "lucide-react";
 
 interface RegistrationFormProps {
   event: {
@@ -28,7 +28,10 @@ const RegistrationForm = ({ event, onSubmit }: RegistrationFormProps) => {
       </div>
 
       <div>
-        <label htmlFor="name" className="block text-sm font-medium text-gray-700">
+        <label
+          htmlFor="name"
+          className="block text-sm font-medium text-gray-700"
+        >
           Full Name
         </label>
         <div className="mt-1 relative">
@@ -40,14 +43,17 @@ const RegistrationForm = ({ event, onSubmit }: RegistrationFormProps) => {
             name="name"
             id="name"
             required
-            className="pl-10 block w-full rounded-md border-gray-300 shadow-sm focus:ring-green-500 focus:border-green-500"
-            placeholder="John Doe"
+            className="pl-10 block w-full rounded-md p-2 border-gray-300 outline-none bg-gray-50 shadow-sm focus:ring-green-500 focus:border-green-500"
+            placeholder="DK"
           />
         </div>
       </div>
 
       <div>
-        <label htmlFor="email" className="block text-sm font-medium text-gray-700">
+        <label
+          htmlFor="email"
+          className="block text-sm font-medium text-gray-700"
+        >
           Email
         </label>
         <div className="mt-1 relative">
@@ -59,14 +65,17 @@ const RegistrationForm = ({ event, onSubmit }: RegistrationFormProps) => {
             name="email"
             id="email"
             required
-            className="pl-10 block w-full rounded-md border-gray-300 shadow-sm focus:ring-green-500 focus:border-green-500"
-            placeholder="john@example.com"
+            className="pl-10 block w-full rounded-md border-gray-300 outline-none p-2 bg-gray-50 shadow-sm focus:ring-green-500 focus:border-green-500"
+            placeholder="example@gmail.com"
           />
         </div>
       </div>
 
       <div>
-        <label htmlFor="phone" className="block text-sm font-medium text-gray-700">
+        <label
+          htmlFor="phone"
+          className="block text-sm font-medium text-gray-700"
+        >
           Phone Number
         </label>
         <div className="mt-1 relative">
@@ -77,8 +86,8 @@ const RegistrationForm = ({ event, onSubmit }: RegistrationFormProps) => {
             type="tel"
             name="phone"
             id="phone"
-            className="pl-10 block w-full rounded-md border-gray-300 shadow-sm focus:ring-green-500 focus:border-green-500"
-            placeholder="+1 (555) 123-4567"
+            className="pl-10 block w-full rounded-md outline-none bg-gray-50 p-2 border-gray-300 shadow-sm focus:ring-green-500 focus:border-green-500"
+            placeholder="+91 9876543210"
           />
         </div>
       </div>

@@ -1,4 +1,3 @@
-import React from 'react';
 import { Code2, Facebook, Twitter, Instagram, Linkedin } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
@@ -30,10 +29,10 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-semibold mb-4">Contact</h3>
             <ul className="space-y-2 text-gray-400">
-              <li>123 Tech Street</li>
-              <li>Silicon Valley, CA</li>
-              <li>contact@hashstart.edu</li>
-              <li>+1 (555) 123-4567</li>
+              <li>Karur</li>
+              <li>Tamilnadu, India</li>
+              <li>contacthashstart@gmail.com</li>
+              <li>+91 9363883007</li>
             </ul>
           </div>
           
@@ -43,10 +42,10 @@ const Footer = () => {
               <a href="#" className="text-gray-400 hover:text-white transition-colors">
                 <Facebook className="h-6 w-6" />
               </a>
-              <a href="#" className="text-gray-400 hover:text-white transition-colors">
+              <a href="https://x.com/Hashstart_edu" className="text-gray-400 hover:text-white transition-colors">
                 <Twitter className="h-6 w-6" />
               </a>
-              <a href="#" className="text-gray-400 hover:text-white transition-colors">
+              <a href="https://www.instagram.com/hashstartacademy?igsh=ZDA5azNwbHN2Y213" className="text-gray-400 hover:text-white transition-colors">
                 <Instagram className="h-6 w-6" />
               </a>
               <a href="#" className="text-gray-400 hover:text-white transition-colors">

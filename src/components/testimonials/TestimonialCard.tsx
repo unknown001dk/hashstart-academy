@@ -7,7 +7,7 @@ interface TestimonialCardProps {
 
 const TestimonialCard = ({ testimonial }: TestimonialCardProps) => {
   return (
-    <div className="group bg-white rounded-xl shadow-lg overflow-hidden transform transition-all duration-300 hover:-translate-y-2 hover:shadow-xl">
+    <div className="group bg-white h-96 rounded-xl overflow-auto shadow-lg transform transition-all duration-300 hover:-translate-y-2 hover:shadow-xl">
       {/* Header with gradient */}
       <div className="relative h-24 bg-gradient-to-r from-green-600 to-green-700 p-6">
         <Quote className="absolute right-4 top-4 h-12 w-12 text-green-500/20 transform rotate-180" />
@@ -23,7 +23,7 @@ const TestimonialCard = ({ testimonial }: TestimonialCardProps) => {
           />
           <div>
             <h3 className="font-semibold text-gray-900">{testimonial.name}</h3>
-            <p className="text-sm text-gray-600">{testimonial.role}</p>
+            <p className="text-sm text-white mb-3">{testimonial.role}</p>
             <p className="text-sm text-green-600">{testimonial.company}</p>
           </div>
         </div>

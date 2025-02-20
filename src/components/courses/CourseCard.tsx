@@ -1,6 +1,6 @@
 import React from 'react';
 import { Course } from '../../data/courses';
-import { Clock, Users, ArrowRight, CheckCircle } from 'lucide-react';
+import { Clock, Users, ArrowRight, CheckCircle, Tag } from 'lucide-react';
 
 interface CourseCardProps {
   course: Course;
@@ -23,12 +23,19 @@ const CourseCard = ({ course, onEnroll }: CourseCardProps) => {
       
       <div className="relative p-8">
         {/* Header */}
-        <div className="flex items-start justify-between mb-6">
+        <div className="flex flex-wrap items-start justify-between mb-6">
           <div className="p-3 bg-green-50 rounded-xl group-hover:bg-green-100 transition-colors duration-300">
             <CourseIcon className="h-8 w-8 text-green-600" />
           </div>
-          <div className="flex flex-col items-end">
-            <span className="text-2xl font-bold text-green-600">{course.price}</span>
+          {course.discount && (
+            <span className="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-red-100 text-red-600">
+              <Tag className="h-4 w-4 mr-1" />
+              {course.discount}% OFF
+            </span>
+          )}
+          <div className="flex flex-col items-end mt-3">
+            <span className="text-2xl font-bold text-green-600">{course.Originalprice}</span>
+            <span className="text-2xl font-bold text-green-500 line-through">{course.price}</span>
             <span className="text-sm text-gray-500">Full Course</span>
           </div>
         </div>
