@@ -1,4 +1,3 @@
-import React from 'react';
 import { Calendar, Users, Video } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
@@ -6,21 +5,21 @@ const upcomingEvents = [
   {
     id: 1,
     title: 'Web Development Workshop',
-    date: 'March 25, 2024',
+    date: 'March 5, 2025',
     type: 'Online',
     icon: Video,
   },
   {
     id: 2,
-    title: 'Data Science Seminar',
-    date: 'March 28, 2024',
+    title: 'Database management Workshop',
+    date: 'March 2, 2025',
     type: 'Online',
     icon: Users,
   },
   {
     id: 3,
     title: 'Career Fair',
-    date: 'April 1, 2024',
+    date: 'April 1, 2025',
     type: 'Online',
     icon: Calendar,
   },

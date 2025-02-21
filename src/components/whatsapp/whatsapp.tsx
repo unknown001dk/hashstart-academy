@@ -13,7 +13,7 @@ const FloatingWhatsApp: React.FC = () => {
                 position: "fixed",
                 bottom: "90px",
                 right: "20px",
-                backgroundColor: "#25D366",
+                backgroundColor: "#169e49",
                 width: "55px",
                 height: "55px",
                 borderRadius: "50%",

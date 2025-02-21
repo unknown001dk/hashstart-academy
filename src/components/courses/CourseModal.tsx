@@ -1,4 +1,3 @@
-import React from 'react';
 import { X, CheckCircle2, Clock, Users, Laptop } from 'lucide-react';
 import { Course } from '../../data/courses';
 

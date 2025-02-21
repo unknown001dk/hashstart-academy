@@ -1,11 +1,10 @@
-import React from 'react';
 import { ArrowRight } from 'lucide-react';
 import { AnimatedSection } from './AnimatedSection';
 import { Link } from 'react-router-dom';
 
 const Hero = () => {
   return (
-    <section className="pt-24 pb-12 bg-gradient-to-br from-green-50 to-white">
+    <section className="pt-24 pb-12 bg-gradient-to-br justify-center from-green-50 to-white">
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row items-center justify-between">
           <AnimatedSection className="md:w-1/2 space-y-6">

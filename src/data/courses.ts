@@ -2,7 +2,7 @@ import { Code, Database, Globe  } from 'lucide-react';
 
 export interface Course {
   id: number;
-  icon: any; // Using any for Lucide icons
+  icon: any; 
   title: string;
   description: string;
   level: string;
@@ -13,6 +13,8 @@ export interface Course {
   features: string[];
   discount: number;
   Originalprice: string;
+  category: string;
+  courseDetails: string;
 }
 
 export const courses: Course[] = [
@@ -41,6 +43,8 @@ export const courses: Course[] = [
     ],
     discount: 10,
     Originalprice: "5,999",
+    category: "Payed",
+    courseDetails: "/pdf/frontend-for-beginners.pdf"
   },
   {
     id: 2,
@@ -67,6 +71,8 @@ export const courses: Course[] = [
     ],
     discount: 10,
     Originalprice: "5,999",
+    category: "Payed",
+    courseDetails: "/pdf/frontend-for-beginners.pdf"
   },
   {
     id: 3,
@@ -93,6 +99,8 @@ export const courses: Course[] = [
     ],
     discount: 10,
     Originalprice: "5,999",
+    category: "Payed",
+    courseDetails: "/pdf/frontend-for-beginners.pdf"
   },
   {
     id: 4,
@@ -119,6 +127,8 @@ export const courses: Course[] = [
     ],
     discount: 10,
     Originalprice: "5,999",
+    category: "Payed",
+    courseDetails: "/pdf/frontend-for-beginners.pdf"
   },
   {
     id: 5,
@@ -143,8 +153,10 @@ export const courses: Course[] = [
       'Job placement assistance',
       'Portfolio development',
     ],
-    discount: 10,
+    discount: 0,
     Originalprice: "9,999",
+    category: "Payed",
+    courseDetails: "/pdf/frontend-for-beginners.pdf"
   },
   {
     id: 6,
@@ -171,7 +183,9 @@ export const courses: Course[] = [
       "Industry mentorship",
       "Portfolio development",
       "Job placement assistance"
-    ]
+    ],
+    category: "Payed",
+    courseDetails: "/pdf/frontend-for-beginners.pdf"
   },
   {
     id: 8,
@@ -198,7 +212,9 @@ export const courses: Course[] = [
       "Hands-on coding exercises",
       "Beginner-friendly approach",
       "Certificate of completion"
-    ]
+    ],
+    category: "Free",
+    courseDetails: "/pdf/frontend-for-beginners.pdf"
   },
   {
     id: 10,
@@ -229,6 +245,8 @@ export const courses: Course[] = [
       "Industry mentorship",
       "Certificate of completion",
       "Job placement assistance"
-    ]
+    ],
+    category: "Payed",
+    courseDetails: "/pdf/frontend-for-beginners.pdf"
   }
 ];

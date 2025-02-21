@@ -1,21 +1,24 @@
-import { useState } from 'react';
-import { courses } from '../data/courses';
-import CourseCard from '../components/courses/CourseCard';
-import EnrollmentModal from '../components/enrollment/EnrollmentModal';
-import SuccessNotification from '../components/notifications/SuccessNotification';
-import type { Course } from '../data/courses';
-import { AnimatedSection } from '../components/AnimatedSection';
-import { useNotification } from '../hooks/useNotification';
-import { Search, GraduationCap, Sparkles } from 'lucide-react';
+import { useState } from "react";
+import { courses } from "../data/courses";
+import CourseCard from "../components/courses/CourseCard";
+import EnrollmentModal from "../components/enrollment/EnrollmentModal";
+import SuccessNotification from "../components/notifications/SuccessNotification";
+import type { Course } from "../data/courses";
+import { AnimatedSection } from "../components/AnimatedSection";
+import { useNotification } from "../hooks/useNotification";
+import { Search, GraduationCap, Sparkles } from "lucide-react";
 
 const CoursesPage = () => {
   const [selectedCourse, setSelectedCourse] = useState<Course | null>(null);
-  const { notification, showNotification, hideNotification } = useNotification();
-  const [searchTerm, setSearchTerm] = useState('');
+  const { notification, showNotification, hideNotification } =
+    useNotification();
+  const [searchTerm, setSearchTerm] = useState("");
 
-  const filteredCourses = courses.filter(course =>
-    course.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
-    course.description.toLowerCase().includes(searchTerm.toLowerCase())
+  const filteredCourses = courses.filter(
+    (course) =>
+      course.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
+      course.description.toLowerCase().includes(searchTerm.toLowerCase()) ||
+      course.category.toLowerCase().includes(searchTerm.toLowerCase())     
   );
 
   const handleEnroll = (course: Course) => {
@@ -24,7 +27,9 @@ const CoursesPage = () => {
 
   const handleEnrollmentSuccess = () => {
     setSelectedCourse(null);
-    showNotification('Successfully enrolled in the course! Check your email for details.');
+    showNotification(
+      "Successfully enrolled in the course! Check your email for details."
+    );
   };
 
   return (
@@ -39,12 +44,14 @@ const CoursesPage = () => {
             </div>
           </div>
           <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-            Explore Our <span className="text-green-600">Expert-Led</span> Courses
+            Explore Our <span className="text-green-600">Expert-Led</span>{" "}
+            Courses
           </h1>
           <p className="text-lg text-gray-600 mb-8 max-w-2xl mx-auto">
-            Discover our comprehensive range of tech courses designed to help you achieve your career goals.
+            Discover our comprehensive range of tech courses designed to help
+            you achieve your career goals.
           </p>
-          
+
           {/* Search Bar */}
           <div className="relative max-w-xl mx-auto group">
             <div className="absolute inset-0 bg-green-200 rounded-xl blur-md opacity-30 group-hover:opacity-40 transition-opacity"></div>
@@ -57,6 +64,7 @@ const CoursesPage = () => {
                 onChange={(e) => setSearchTerm(e.target.value)}
                 className="w-full pl-12 pr-4 py-4 rounded-xl border border-gray-200 outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent transition-all shadow-sm hover:shadow-md"
               />
+
               {searchTerm && (
                 <div className="absolute right-4 top-1/2 transform -translate-y-1/2 flex items-center space-x-2 text-sm text-gray-500">
                   <span>{filteredCourses.length} results</span>
@@ -85,9 +93,11 @@ const CoursesPage = () => {
               <div className="flex justify-center mb-4">
                 <Search className="h-12 w-12 text-gray-400" />
               </div>
-              <p className="text-gray-600 text-lg">No courses found matching your search.</p>
-              <button 
-                onClick={() => setSearchTerm('')}
+              <p className="text-gray-600 text-lg">
+                No courses found matching your search.
+              </p>
+              <button
+                onClick={() => setSearchTerm("")}
                 className="mt-4 text-green-600 hover:text-green-700 font-medium"
               >
                 Clear search

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Menu, X } from "lucide-react";
+import { Menu, X, Code2 } from "lucide-react";
 import { Link, useLocation } from "react-router-dom";
 // import Modal from './modals/Modal';
 // import EnrollModal from './modals/EnrollModal';
@@ -63,10 +63,10 @@ const Header = () => {
       <nav className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           <Link to="/" className="flex items-center space-x-2">
-            {/* <Code2 className="h-8 w-8 text-green-600" /> */}
+            <Code2 className="h-8 w-8 text-green-600" />
             {/* add logo here */}
-            <img src="/assets/logo.png" alt="" className="h-16" />
-            {/* <span className="text-xl font-bold text-gray-800">HashStart</span> */}
+            {/* <img src="/assets/logo.png" alt="" className="h-16" /> */}
+            <span className="text-xl font-bold text-gray-800">HashStart Academy</span>
           </Link>
 
           {/* Desktop Navigation */}

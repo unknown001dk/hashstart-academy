@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { X } from 'lucide-react';
+import { X, Download } from 'lucide-react';
 import { EnrollmentForm } from './EnrollmentForm';
 import { Course } from '../../data/courses';
 
@@ -52,6 +52,16 @@ const EnrollmentModal = ({ course, isOpen, onClose, onSuccess }: EnrollmentModal
             <X className="h-5 w-5 sm:h-6 sm:w-6" />
           </button>
         </div>
+
+        <a
+            href={course.courseDetails}
+            download
+            className="mt-4 inline-block bg-emerald-600 text-white px-4 py-2 rounded-lg hover:bg-emerald-700 transition "
+          >
+            {/* here use icons */}
+            <Download size={18} />
+            {/* <span>Download Course Details</span> */}
+          </a>
 
         <div className="p-4 sm:p-6 md:p-8">
           <EnrollmentForm course={course} onClose={onClose} onSuccess={onSuccess} />
