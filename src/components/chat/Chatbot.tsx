@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 import { MessageCircle, X } from "lucide-react";
-import ChatMessage from "./ChatMessage";
+// import ChatMessage from "./ChatMessage";
 import ChatInput from "./ChatInput";
 
 interface Message {
@@ -74,7 +74,7 @@ const Chatbot = () => {
       setTimeout(() => {
         setMessages((prev) => [
           ...prev,
-          { text: sanitizedMessage, isBot: false },
+          // { text: sanitizedMessage, isBot: false },
           { text: "Please avoid using inappropriate language.", isBot: true },
         ]);
       }, 1000);
@@ -100,12 +100,28 @@ const Chatbot = () => {
         case /blog/i.test(message):
           botResponse = "Check out our blog for the latest updates and tips!";
           break;
-        case /\bhi\b|\bhello\b/i.test(message):
-          botResponse = "Hello! How can I assist you today?";
-          break;
-        case /python/i.test(message):
+        case /\bpython\b|\bpython course\b/i.test(message):
           botResponse =
             "We offer Python courses for beginners to advanced learners. Check out our Python course page!";
+          break;
+        case /contact/i.test(message):
+          botResponse = "For contact, please email contacthashstart@gmail.com.";
+          break;
+        case /database/i.test(message):
+          botResponse =
+            "We offer various courses in databases, such as MySQL, PostgreSQL, and MongoDB. Visit our website for more details!";
+          break;
+        case /design/i.test(message):
+          botResponse =
+            "We offer design courses for beginners to advanced learners. Check out our design course page!";
+          break;
+        case /react/i.test(message):
+          botResponse =
+            "We offer React courses for beginners to advanced learners. Check out our React course page!";
+          break;
+        case /\bjavascript\b|\bjs\b/i.test(message):
+          botResponse =
+            "We offer JavaScript courses for beginners to advanced learners. Check out our JavaScript course page!";
           break;
         default:
           botResponse =

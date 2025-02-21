@@ -34,12 +34,22 @@ const CourseCard = ({ course, onEnroll }: CourseCardProps) => {
             </span>
           )}
           <div className="flex flex-col items-end mt-3">
-            <span className="text-2xl font-bold text-green-600">
-              {course.Originalprice}
-            </span>
-            <span className="text-2xl font-bold text-green-500 line-through">
-              {course.price}
-            </span>
+            {course.discount > 0 && (
+              <div className="block">
+                {/* <span className="text-sm text-gray-500">Discounted</span> */}
+                <span className="text-2xl font-bold text-green-600 block">
+                  {course.price}
+                </span>
+                <span className="text-2xl font-bold text-green-500 line-through">
+                  {course.Originalprice}
+                </span>
+              </div>
+            )}
+            {course.discount === 0 && (
+              <span className="text-2xl font-bold text-green-500">
+                {course.Originalprice}
+              </span>
+            )}
             <span className="text-sm text-gray-500">Full Course</span>
           </div>
         </div>
@@ -49,7 +59,7 @@ const CourseCard = ({ course, onEnroll }: CourseCardProps) => {
           <h2 className="text-2xl font-bold text-gray-900 group-hover:text-green-600 transition-colors">
             {course.title}
           </h2>
-         
+
           <p className="text-gray-600 group-hover:text-gray-700">
             {course.description}
           </p>

@@ -48,7 +48,7 @@ const UpcomingEvents = () => {
                   <p className="text-green-600 mb-6 group-hover:text-white font-medium">{event.type}</p>
                   <Link
                     to="/events"
-                    className="inline-flex items-center gap-2 text-green-600 font-medium group-hover:text-white"
+                    className="inline-flex items-center gap-2 text-green-600 underline font-medium group-hover:text-white"
                   >
                     Register Now
                     <Calendar className="h-4 w-4 transition-transform group-hover:translate-x-1" />

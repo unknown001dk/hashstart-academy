@@ -1,4 +1,4 @@
-import { Code, Database, Globe  } from 'lucide-react';
+import { Code, Database, Globe, Palette  } from 'lucide-react';
 
 export interface Course {
   id: number;
@@ -42,9 +42,9 @@ export const courses: Course[] = [
       'Job placement assistance',
     ],
     discount: 10,
-    Originalprice: "5,999",
+    Originalprice: "₹5,999",
     category: "Payed",
-    courseDetails: "/pdf/frontend-for-beginners.pdf"
+    courseDetails: "/pdf/dummy.pdf"
   },
   {
     id: 2,
@@ -70,9 +70,9 @@ export const courses: Course[] = [
       'Career guidance',
     ],
     discount: 10,
-    Originalprice: "5,999",
+    Originalprice: "₹5,999",
     category: "Payed",
-    courseDetails: "/pdf/frontend-for-beginners.pdf"
+    courseDetails: "/pdf/dummy.pdf"
   },
   {
     id: 3,
@@ -98,9 +98,9 @@ export const courses: Course[] = [
       'Learning support',
     ],
     discount: 10,
-    Originalprice: "5,999",
+    Originalprice: "₹5,999",
     category: "Payed",
-    courseDetails: "/pdf/frontend-for-beginners.pdf"
+    courseDetails: "/pdf/dummy.pdf"
   },
   {
     id: 4,
@@ -126,9 +126,9 @@ export const courses: Course[] = [
       'Project work',
     ],
     discount: 10,
-    Originalprice: "5,999",
+    Originalprice: "₹5,999",
     category: "Payed",
-    courseDetails: "/pdf/frontend-for-beginners.pdf"
+    courseDetails: "/pdf/dummy.pdf"
   },
   {
     id: 5,
@@ -154,13 +154,13 @@ export const courses: Course[] = [
       'Portfolio development',
     ],
     discount: 0,
-    Originalprice: "9,999",
+    Originalprice: "₹9,999",
     category: "Payed",
-    courseDetails: "/pdf/frontend-for-beginners.pdf"
+    courseDetails: "/pdf/dummy.pdf"
   },
   {
     id: 6,
-    icon: "Palette",
+    icon: Palette,
     title: "UI/UX Development",
     description: "Master UI/UX design principles, wireframing, prototyping, and user experience strategies.",
     level: "Beginner to Advanced",
@@ -185,17 +185,17 @@ export const courses: Course[] = [
       "Job placement assistance"
     ],
     category: "Payed",
-    courseDetails: "/pdf/frontend-for-beginners.pdf"
+    courseDetails: "/pdf/dummy.pdf"
   },
   {
     id: 8,
-    icon: "Code",
+    icon: Code,
     title: "C Programming Basics",
     description: "Learn the fundamentals of C programming from scratch.",
     level: "Beginner",
     duration: "15 days",
-    price: "₹2,999",
-    Originalprice: "Free",
+    price: "Free",
+    Originalprice: "₹2,999",
     discount: 100,
     fullDescription: "This beginner-friendly course covers the basics of C programming, including syntax, data types, control structures, functions, and arrays. Perfect for those starting their programming journey.",
     curriculum: [
@@ -214,17 +214,17 @@ export const courses: Course[] = [
       "Certificate of completion"
     ],
     category: "Free",
-    courseDetails: "/pdf/frontend-for-beginners.pdf"
+    courseDetails: "/pdf/dummy.pdf"
   },
   {
     id: 10,
-    icon: "React",
+    icon: Globe,
     title: "React.js Development",
     description: "Master React.js and build dynamic web applications with modern UI components.",
     level: "Beginner to Intermediate",
     duration: "45 days",
-    price: "₹11,999",
-    Originalprice: "₹5,999",
+    price: "₹5,999",
+    Originalprice: "₹11,999",
     discount: 50,
     fullDescription: "This comprehensive React.js course covers everything from fundamental concepts to advanced topics like state management, hooks, context API, and performance optimization. Build real-world applications with hands-on projects.",
     curriculum: [
@@ -247,6 +247,6 @@ export const courses: Course[] = [
       "Job placement assistance"
     ],
     category: "Payed",
-    courseDetails: "/pdf/frontend-for-beginners.pdf"
+    courseDetails: "/pdf/dummy.pdf"
   }
 ];

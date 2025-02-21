@@ -21,7 +21,7 @@ const FloatingWhatsApp: React.FC = () => {
                 justifyContent: "center",
                 alignItems: "center",
                 boxShadow: "0 4px 8px rgba(0,0,0,0.3)",
-                zIndex: 1000,
+                zIndex: 0,
             }}
         >
             <img 
